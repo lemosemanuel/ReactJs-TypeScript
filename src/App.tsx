@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ContadorRed } from "./components/ContadorRed";
+import { Counter } from "./components/Counter";
+import Formulario from "./components/Formulario";
+import TimerPadre from "./components/TimerPadre";
+import Usuario from './components/Usuario';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>React + TypeScript</h1>
+      <hr />
+      <h2>useState</h2>
+      <Usuario></Usuario>
+      <hr />
+      <h2>Useffect - UseRef</h2>
+      <Counter></Counter>
+      <hr />
+      <hr />
+      <h2>UseReducer</h2>
+      <ContadorRed></ContadorRed>
+      <hr />
+      <h2>CustomHooks</h2>
+      <Formulario></Formulario>
+      
     </div>
   );
 }
